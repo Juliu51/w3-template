@@ -8,10 +8,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $mywhite;
+  font-family: $font-raleway;
+  h4 { 
+    font-size: $large;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+  }
   .block {
     width: 98%;
     height: 98%;
-    .left {
+      .left {
       width: 30%;
       height: 100%;
       display: grid;
@@ -25,9 +33,30 @@
         }
       }
       .apacia {
-        background-color: red;
+        position: relative;
+        .text1 {
+          position: absolute;
+          bottom: 80px;
+          font-size: $small;
+          font-weight: 100;
+        }
+        .text2 {
+          position: absolute;
+          bottom: 40px;
+          font-size: $xsmall;
+        }
+        .text3 {
+          position: absolute;
+          bottom: 0;
+          font-size: $xxsmall;
+          a {
+            color: $mywhite;
+            text-decoration: underline;
+          }
+        }
       }
     }
+    
   }
 }
 
@@ -38,8 +67,12 @@ button {
   align-items: center;
   height: 50px;
   margin-bottom: 30px;
-  background-color: black;
-  color: white;
+  background-color: $black;
+  color: $mywhite;
   font-size: $small;
-  font-family: Raleway;
+  font-family: $font-raleway;
+  &:hover {
+    background-color: $mywhite;
+    color: $black;
+  }
 }

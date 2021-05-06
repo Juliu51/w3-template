@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
    .menu_lentele {
     width: 35%;
     height: 60%;
@@ -31,7 +32,7 @@
     display: grid;
     grid-template-rows: 2fr 3fr 2fr;
     font-family: $font-raleway;
-    // z-index: -1;
+    animation: move 1s linear  alternate;
     @media (max-width: $md) {
       width: 50%;
     }
@@ -75,6 +76,81 @@
         }}
       }
     }
+    .contact_lentele {
+      width: 35%;
+      height: 40%;
+      position: absolute;
+      background-color: white;
+      font-family: $font-raleway;
+      // animation: move 1s linear  alternate;
+      // @media (max-width: $md) {
+      //   width: 50%;
+      // }
+      .lentele_block1 {
+        height: 100%;
+        width: 100%;
+        color: $black;
+        width: 100%;
+          .isjungti {
+          position: absolute;
+          color: $mywhite;
+          width: 30px;
+          height: 30px;
+          right: 0;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background-color: $mywhite;
+            color: $black;
+            cursor: pointer;
+          }
+        }
+        .lentele_virsus1 {
+          font-size: $medium;
+          width: 100%;
+          height: 15%;
+          background-color: $black;
+          color: $mywhite;
+          display: flex;
+          align-items: center;
+          padding-left: 10px;
+        }
+        h1 { padding: 10px;
+          width: 100%;
+          height: 15%;
+          }
+                    .input { 
+            width: 100%;
+            border: 1px solid grey;
+          }
+          .forma { height: 70%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap; 
+            justify-content: space-between;
+            @media (max-width: $md) {
+              margin-right: 10px;
+            }
+            
+            input {
+              height: 40px;
+              width: 95%;
+              margin: 5px 10px;
+            }
+            button {
+              margin-top: 10px;
+              margin-left: 10px;
+              background-color: white;
+              &:hover {
+                background-color: grey;
+              }
+            }
+          }
+        }
+        }
+      }
   }
   h4 {
     font-size: $large;
@@ -92,6 +168,7 @@
       .virsus {
         padding-top: 20px;
         .menu {
+          margin-bottom: 30px;
           width: 80px;
         }
         .contact {
@@ -121,18 +198,18 @@
           }
         }
       }
-    }
-  }
-}
+    }}
+  
 
-button {
+
+.button {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
-  margin-bottom: 30px;
   background-color: $black;
+  
   color: $mywhite;
   font-size: $small;
   font-family: $font-raleway;
@@ -143,4 +220,8 @@ button {
 }
 .on {
   z-index: 3;
+  @keyframes move {
+    from {transform: scale(0); }
+    to {transform: scale(1); }
+  }
 }

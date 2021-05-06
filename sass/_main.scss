@@ -10,7 +10,57 @@
   align-items: center;
   color: $mywhite;
   font-family: $font-raleway;
-  h4 { 
+  .menu_lentele {
+    width: 35%;
+    height: 60%;
+    position: absolute;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 2fr 3fr 2fr;
+    font-family: $font-raleway;
+    @media (max-width: $md) {
+      width: 50%;
+    }
+    .lentele_block { width: 100%;
+      flex-wrap: wrap;
+      display: flex;
+      color: $black;
+      .isjungti {
+        position: absolute;
+        color: $mywhite;
+        width: 30px;
+        height: 30px;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background-color: $mywhite;
+          color: $black;
+          cursor: pointer;
+        }
+      }
+      .lentele_virsus {
+        font-size: $medium;
+        width: 100%;
+        height: 35%;
+        background-color: $black;
+        color: $mywhite;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+      p {width: 100%;
+        padding-left: 10px;
+        font-size: $xsmall;
+        span {
+          font-weight: 900;
+        }
+      }
+    }
+  }
+  h4 {
     font-size: $large;
     position: absolute;
     justify-content: center;
@@ -19,7 +69,7 @@
   .block {
     width: 98%;
     height: 98%;
-      .left {
+    .left {
       width: 30%;
       height: 100%;
       display: grid;
@@ -56,7 +106,6 @@
         }
       }
     }
-    
   }
 }
 

@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-rows: 2fr 3fr 2fr;
   font-family: "Raleway", monospace;
-  animation: move 1s linear  alternate;
+  animation: move 1s linear alternate;
 }
 
 @media (max-width: 720px) {
@@ -169,6 +169,13 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   background-color: white;
   font-family: "Raleway", monospace;
+  animation: move 1s linear alternate;
+}
+
+@media (max-width: 720px) {
+  .wrapper .container .contact_lentele {
+    width: 50%;
+  }
 }
 
 .wrapper .container .contact_lentele .lentele_block1 {
@@ -178,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-.wrapper .container .contact_lentele .lentele_block1 .isjungti {
+.wrapper .container .contact_lentele .lentele_block1 .ijungti {
   position: absolute;
   color: white;
   width: 30px;
@@ -190,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
-.wrapper .container .contact_lentele .lentele_block1 .isjungti:hover {
+.wrapper .container .contact_lentele .lentele_block1 .ijungti:hover {
   background-color: white;
   color: black;
   cursor: pointer;
@@ -335,4 +342,8 @@ h4 {
   to {
     transform: scale(1);
   }
+}
+
+.off {
+  visibility: hidden;
 }

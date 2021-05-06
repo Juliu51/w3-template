@@ -16,64 +16,65 @@
     color: $mywhite;
     position: absolute;
   }
-.container {width: 100%;
-  height: 100%;
-  background-color: rgba(88, 88, 92, 0.281);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-   .menu_lentele {
-    width: 35%;
-    height: 60%;
+  .container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(88, 88, 92, 0.281);
     position: absolute;
-    background-color: white;
-    display: grid;
-    grid-template-rows: 2fr 3fr 2fr;
-    font-family: $font-raleway;
-    animation: move 1s linear  alternate;
-    @media (max-width: $md) {
-      width: 50%;
-    }
-    .lentele_block {
-      width: 100%;
-      flex-wrap: wrap;
-      display: flex;
-      color: $black;
-      .isjungti {
-        position: absolute;
-        color: $mywhite;
-        width: 30px;
-        height: 30px;
-        right: 0;
-        top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .menu_lentele {
+      width: 35%;
+      height: 60%;
+      position: absolute;
+      background-color: white;
+      display: grid;
+      grid-template-rows: 2fr 3fr 2fr;
+      font-family: $font-raleway;
+      animation: move 1s linear alternate;
+      @media (max-width: $md) {
+        width: 50%;
+      }
+      .lentele_block {
+        width: 100%;
+        flex-wrap: wrap;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        &:hover {
-          background-color: $mywhite;
-          color: $black;
-          cursor: pointer;
+        color: $black;
+        .isjungti {
+          position: absolute;
+          color: $mywhite;
+          width: 30px;
+          height: 30px;
+          right: 0;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background-color: $mywhite;
+            color: $black;
+            cursor: pointer;
+          }
         }
-      }
-      .lentele_virsus {
-        font-size: $medium;
-        width: 100%;
-        height: 35%;
-        background-color: $black;
-        color: $mywhite;
-        display: flex;
-        align-items: center;
-        padding-left: 10px;
-      }
-      p {
-        width: 100%;
-        padding-left: 10px;
-        font-size: $xsmall;
-        span {
-          font-weight: 900;
-        }}
+        .lentele_virsus {
+          font-size: $medium;
+          width: 100%;
+          height: 35%;
+          background-color: $black;
+          color: $mywhite;
+          display: flex;
+          align-items: center;
+          padding-left: 10px;
+        }
+        p {
+          width: 100%;
+          padding-left: 10px;
+          font-size: $xsmall;
+          span {
+            font-weight: 900;
+          }
+        }
       }
     }
     .contact_lentele {
@@ -82,16 +83,16 @@
       position: absolute;
       background-color: white;
       font-family: $font-raleway;
-      // animation: move 1s linear  alternate;
-      // @media (max-width: $md) {
-      //   width: 50%;
-      // }
+      animation: move 1s linear alternate;
+      @media (max-width: $md) {
+        width: 50%;
+      }
       .lentele_block1 {
         height: 100%;
         width: 100%;
         color: $black;
         width: 100%;
-          .isjungti {
+        .ijungti {
           position: absolute;
           color: $mywhite;
           width: 30px;
@@ -117,91 +118,90 @@
           align-items: center;
           padding-left: 10px;
         }
-        h1 { padding: 10px;
+        h1 {
+          padding: 10px;
           width: 100%;
           height: 15%;
-          }
-                    .input { 
-            width: 100%;
-            border: 1px solid grey;
-          }
-          .forma { height: 70%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap; 
-            justify-content: space-between;
-            @media (max-width: $md) {
-              margin-right: 10px;
-            }
-            
-            input {
-              height: 40px;
-              width: 95%;
-              margin: 5px 10px;
-            }
-            button {
-              margin-top: 10px;
-              margin-left: 10px;
-              background-color: white;
-              &:hover {
-                background-color: grey;
-              }
-            }
-          }
         }
+        .input {
+          width: 100%;
+          border: 1px solid grey;
+        }
+        .forma {
+          height: 70%;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          @media (max-width: $md) {
+            margin-right: 10px;
+          }
+          input {
+            height: 40px;
+            width: 95%;
+            margin: 5px 10px;
+          }
+          button {
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: white;
+            &:hover {
+              background-color: grey;
+            }
+          }
         }
       }
+    }
   }
-  h4 {
-    font-size: $large;
-    position: absolute;
-    justify-content: center;
-    text-align: center;
+}
+h4 {
+  font-size: $large;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+}
+.block {
+  width: 98%;
+  height: 98%;
+  .left {
+    width: 30%;
+    height: 100%;
+    display: grid;
+    .virsus {
+      padding-top: 20px;
+      .menu {
+        margin-bottom: 30px;
+        width: 80px;
+      }
+      .contact {
+        width: 120px;
+      }
+    }
+    .apacia {
+      position: relative;
+      .text1 {
+        position: absolute;
+        bottom: 80px;
+        font-size: $small;
+        font-weight: 100;
+      }
+      .text2 {
+        position: absolute;
+        bottom: 40px;
+        font-size: $xsmall;
+      }
+      .text3 {
+        position: absolute;
+        bottom: 0;
+        font-size: $xxsmall;
+        a {
+          color: $mywhite;
+          text-decoration: underline;
+        }
+      }
+    }
   }
-  .block {
-    width: 98%;
-    height: 98%;
-    .left {
-      width: 30%;
-      height: 100%;
-      display: grid;
-      .virsus {
-        padding-top: 20px;
-        .menu {
-          margin-bottom: 30px;
-          width: 80px;
-        }
-        .contact {
-          width: 120px;
-        }
-      }
-      .apacia {
-        position: relative;
-        .text1 {
-          position: absolute;
-          bottom: 80px;
-          font-size: $small;
-          font-weight: 100;
-        }
-        .text2 {
-          position: absolute;
-          bottom: 40px;
-          font-size: $xsmall;
-        }
-        .text3 {
-          position: absolute;
-          bottom: 0;
-          font-size: $xxsmall;
-          a {
-            color: $mywhite;
-            text-decoration: underline;
-          }
-        }
-      }
-    }}
-  
-
-
+}
 .button {
   width: 100%;
   display: flex;
@@ -209,7 +209,6 @@
   align-items: center;
   height: 50px;
   background-color: $black;
-  
   color: $mywhite;
   font-size: $small;
   font-family: $font-raleway;
@@ -221,7 +220,14 @@
 .on {
   z-index: 3;
   @keyframes move {
-    from {transform: scale(0); }
-    to {transform: scale(1); }
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
   }
+}
+.off {
+  visibility: hidden;
 }

@@ -1,0 +1,45 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/onepage_restaurant.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .block {
+    width: 98%;
+    height: 98%;
+    .left {
+      width: 30%;
+      height: 100%;
+      display: grid;
+      .virsus {
+        padding-top: 20px;
+        .menu {
+          width: 80px;
+        }
+        .contact {
+          width: 120px;
+        }
+      }
+      .apacia {
+        background-color: red;
+      }
+    }
+  }
+}
+
+button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 30px;
+  background-color: black;
+  color: white;
+  font-size: $small;
+  font-family: Raleway;
+}
